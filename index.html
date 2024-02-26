@@ -22,8 +22,22 @@ p{
 </head>
 
 <body>
+<script>
+	function VerCV(){
+		var password = prompt ("Ingresar la contraseña para consultar la informacion: ", "");
+		var ContraCorrecta = "TACOSBARBACOA";
+		if (password == ContraCorrecta){
+			document.getElemtyById("CV").style.display = "block";
+		}else{
+			alert("Contraseña incorrecta. Intentalo de nuevo.");
+		}
+		
+	}
+</script>
 
-<section>
+	<button onclick = "VerCV()">Ver CV</button>
+	
+<section id = "CV" style = "display: none">
 <center>
 <!--Table 1 -->
 <table width="500" border="2" style="width: 50%;">
